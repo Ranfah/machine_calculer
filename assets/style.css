@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 10px;
+    background:#1c1c1c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    outline: solid 10px #333;
+}
+.display{
+    height: 90px;
+    width: 100%;
+    outline: none;
+    border: solid 0.3;
+    text-align: right;
+    margin: 50px 0;
+    font-size: 40px;
+    color: #111;
+    pointer-events: none;
+}
+input{
+    background: #999;
+    border-radius: 9px;
+}
+.button{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+.button button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(#e8e8e8, #9b9b9b);
+}
+.button button:hover{
+    transition: .5s;
+    background: linear-gradient( #9b9b9b,#e8e8e8);
+}
+.button button:active{
+    transform: scale(0.99);
+}
+.class_op{
+    color: #e1e1e1;
+}
+button.class_op{
+    background: linear-gradient(#4b3763, #331f4d);
+}
+button.class_op:hover{
+    background: linear-gradient(#331f4d, #4b3763);
+}
+button.class_eq{
+    background: linear-gradient(#b06803,#a35603);
+}
+button.class_eq:hover{
+    background: linear-gradient(#a35603,#b06803);
+}
